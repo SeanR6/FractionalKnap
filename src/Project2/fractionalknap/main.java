@@ -40,6 +40,7 @@ public class main {
                     j=i;
                 }
             }
+            //TODO fix output
             //this outputs the items, the first case is when an item won't completely fit, and it cuts it into pieces
             if(array[0][j]>m)
             {
