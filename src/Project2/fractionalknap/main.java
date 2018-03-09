@@ -1,10 +1,10 @@
 package Project2.fractionalknap;
 
-import java.io.IOException;
+
 import java.util.Scanner;
 
 public class main {
-    public static void main(String args[]) throws IOException {   //variable instantiation
+    public static void main(String args[]) {   //variable instantiation
         int i, j = 0, qty, m, n;
         float sum=0,max;
         //INPUT
