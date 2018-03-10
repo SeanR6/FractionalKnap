@@ -7,6 +7,7 @@ public class main {
     public static void main(String args[]) {   //variable instantiation
         int i, j = 0, qty, m, n;
         float sum=0,max;
+        int totalCost;
         //INPUT
         Scanner sc = new Scanner(System.in);
         //2 dim array, one row for wieght, the other for values
@@ -37,10 +38,11 @@ public class main {
                 {
                     //sets current max and keeps track of its index j=i
                     max=((float)array[1][i])/((float)array[0][i]);
+
                     j=i;
                 }
             }
-            //TODO fix output
+
             //this outputs the items, the first case is when an item won't completely fit, and it cuts it into pieces
             if(array[0][j]>m)
             {
@@ -60,7 +62,7 @@ public class main {
                 array[1][j]=0;
             }
         }
-        System.out.println("The total profit is " + sum);
+        System.out.println("The total profit is " + (int) sum);
         sc.close();
     }
 
